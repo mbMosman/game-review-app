@@ -1,4 +1,4 @@
-package edu.htc.gamedata.config;
+package edu.htc.gamedata.services;
 
 import edu.htc.gamedata.entities.Game;
 import edu.htc.gamedata.repositories.GameRepository;

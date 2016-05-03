@@ -1,8 +1,6 @@
-package edu.htc.gamedata.config;
+package edu.htc.gamedata.services;
 
-import edu.htc.gamedata.entities.Game;
 import edu.htc.gamedata.entities.Review;
-import edu.htc.gamedata.repositories.GameRepository;
 import edu.htc.gamedata.repositories.ReviewRepository;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
