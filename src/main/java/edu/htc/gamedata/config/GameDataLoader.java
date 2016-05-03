@@ -31,5 +31,7 @@ public class GameDataLoader implements ApplicationListener<ContextRefreshedEvent
         log.info("Saved Game - name: " + game.getName());
 
 
+        // some changes to this class
+
     }
 }
