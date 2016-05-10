@@ -8,6 +8,6 @@ import org.springframework.data.repository.query.Param;
 
 public interface ReviewRepository extends CrudRepository<Review, Integer> {
 
-    @Query("SELECT AVG(r.starRating) FROM Review r WHERE r.game.id = :gameId")
-    double getAverageRating(@Param("gameId") int gameId);
+    @Query("SELECT AVG(r.starRating) FROM Review r WHERE r.game.id = :gameId GROUP BY r.game.id")
+    Double getAverageRating(@Param("gameId") int gameId);
 }

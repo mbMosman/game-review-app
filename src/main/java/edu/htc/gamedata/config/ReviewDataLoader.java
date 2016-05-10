@@ -62,6 +62,7 @@ public class ReviewDataLoader implements ApplicationListener<ContextRefreshedEve
         Review review = new Review();
         Game game = createFinalFantasyXiv();
         review.setGame(game);
+        review.setStarRating(3);
         review.setReviewer(reviewer);
 
         reviewRepository.save(review);
@@ -70,6 +71,7 @@ public class ReviewDataLoader implements ApplicationListener<ContextRefreshedEve
         review = new Review();
         game = createFinalFantasyXivReborn();
         review.setGame(game);
+        review.setStarRating(5);
         review.setReviewer(reviewer);
 
         reviewRepository.save(review);
@@ -84,6 +86,7 @@ public class ReviewDataLoader implements ApplicationListener<ContextRefreshedEve
         review = new Review();
         game = createBanished();
         review.setGame(game);
+        review.setStarRating(5);
         review.setReviewer(reviewer);
 
         reviewRepository.save(review);

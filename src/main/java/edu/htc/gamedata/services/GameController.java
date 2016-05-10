@@ -33,9 +33,11 @@ public class GameController {
     @RequestMapping("/search/gameById")
     public Game findGameById(@RequestParam(value="id") int id) {
         Game game =  gameRepository.findOne(id);
-        double avgRating = reviewRepository.getAverageRating(id);
+        Double avgRating = reviewRepository.getAverageRating(id);
         log.info("Average rating = " + avgRating);
-        game.setAvgRating(avgRating);
+        if (avgRating != null) {
+            game.setAvgRating(avgRating);
+        }
         return game;
     }
 
